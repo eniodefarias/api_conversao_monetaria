@@ -1,3 +1,6 @@
+[![wakatime](https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c.svg)](https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c)
+
+
 # api_conversao_monetaria
 API em Python+Django, que responde um JSON, para conversão monetária. Usa uma moeda de lastro (USD) e faz conversões entre diferentes moedas com cotações de verdade e atuais
 
@@ -29,9 +32,9 @@ git checkout main
 instrucoes
 
 
-# desenvolvendo o projeto
+# Desenvolvendo o projeto
 
-## Briefing e descrição
+## Briefing, descrição e requisitos
 ### Desafio Técnico desenvolvedor backend Python/Django
 Construa uma API, que responda JSON, para conversão monetária. Ela deve ter uma moeda de lastro (USD) e fazer conversões entre diferentes moedas com cotações de verdade e atuais.
  - A API deve, originalmente, converter entre as seguintes moedas:
@@ -70,19 +73,25 @@ a aplicação?
 
  ## Criando o ambiente Django
 
-criando o venv no diretorio do projeto, utilizarei comandos para o Linux
-```bash
-mkdir api_conversao_monetaria
-cd api_conversao_monetaria
-$HOME/.pyenv/shims/python3 -m venv .venv
-```
+ - criando o venv no diretorio do projeto, utilizarei comandos para o Linux:
+   -  ```bash
+        mkdir api_conversao_monetaria
+        cd api_conversao_monetaria
+        $HOME/.pyenv/shims/python3 -m venv .venv
+        ```
 
-ativando o VENV, instalando e criando o django
-```bash
-source .venv/bin/activate
-pip install django
-django-admin startproject api_cambio 
-```
+ - ativando o VENV, instalando depedencias:
+   -  ```bash
+        source .venv/bin/activate
+        pip install django
+        python -m pip install --upgrade pip
+        cat requeriments.txt|sort|uniq| grep -v '#' | xargs -n 1 pip3 install
+        ```
+
+ - Criando o projeto django:
+   - ```bash
+      django-admin startproject api_cambio 
+      ```
 
   ~~instalando e criando o django diretamente sem ativar o VENV (não use este metodo)~~
 
