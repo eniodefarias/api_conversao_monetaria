@@ -1,5 +1,7 @@
 <a href="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c"><img src="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c.svg" alt="wakatime"></a>
 
+<a href="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c"><img src="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c.svg" alt="wakatime"></a>
+
 # api_conversao_monetaria
 API em Python+Django, que responde um JSON, para conversão monetária. Usa uma moeda de lastro (USD) e faz conversões entre diferentes moedas com cotações de verdade e atuais
 
