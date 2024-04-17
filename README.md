@@ -1,6 +1,6 @@
 <a href="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c"><img src="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c.svg" alt="wakatime"></a>
 
-<a href="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c"><img src="https://wakatime.com/badge/user/739793a6-a4fb-4d88-b1e6-f79a9182d930/project/018e5da1-a102-4172-9bd4-4d61e140e96c.svg" alt="wakatime"></a>
+
 
 # api_conversao_monetaria
 API em Python+Django, que responde um JSON, para conversão monetária. Usa uma moeda de lastro (USD) e faz conversões entre diferentes moedas com cotações de verdade e atuais
@@ -89,16 +89,32 @@ a aplicação?
         cat requeriments.txt|sort|uniq| grep -v '#' | xargs -n 1 pip3 install
         ```
 
+ -  ~~instalando e criando o django diretamente sem ativar o VENV (não use este metodo)~~
+  - ~~.venv/Scripts/python.exe -m pip install django~~
+  - ~~.venv/Scripts/python.exe -m django-admin startproject api_cambio~~
+
+
  - Criando o projeto django:
    - ```bash
       django-admin startproject api_cambio 
-      ```
+        ```
 
-  ~~instalando e criando o django diretamente sem ativar o VENV (não use este metodo)~~
+ - Criando as pastas e arquivos para começar o projeto django:
+   - ```bash          
+     mkdir -p api_cambio/app1/migrations/ api_cambio/app2/migrations/; 
+     touch api_cambio/app1/migrations/__init__.py api_cambio/app2/migrations/__init__.py
+     touch api_cambio/app1/__init__.py  api_cambio/app2/__init__.py
+     touch api_cambio/app1/admin.py api_cambio/app2/admin.py
+     touch api_cambio/app1/apps.py api_cambio/app2/apps.py
+     touch api_cambio/app1/models.py api_cambio/app2/models.py 
+     touch api_cambio/app1/tests.py api_cambio/app2/tests.py
+     touch api_cambio/app1/views.py api_cambio/app2/views.py
+        ```
 
-  ~~.venv/Scripts/python.exe -m pip install django~~
+ - com os arquivos criados e quentinhos, vamos criar a APP1 que utilizará a lib **forex_python**
+   - criar a view no api_cambio/app1/views.py 
+   - e tambem adicionar a rota no api_cambio/urls.py
 
-  ~~.venv/Scripts/python.exe -m django-admin startproject api_cambio~~
 
 ---
 
